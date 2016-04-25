@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		AEBB3E9F1CCE1BB70019DDD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBB3E9E1CCE1BB70019DDD5 /* main.m */; };
 		AEBB3EA21CCE1BB70019DDD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBB3EA11CCE1BB70019DDD5 /* AppDelegate.m */; };
-		AEBB3EA51CCE1BB70019DDD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBB3EA41CCE1BB70019DDD5 /* ViewController.m */; };
 		AEBB3EA81CCE1BB70019DDD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBB3EA61CCE1BB70019DDD5 /* Main.storyboard */; };
 		AEBB3EAA1CCE1BB70019DDD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBB3EA91CCE1BB70019DDD5 /* Assets.xcassets */; };
 		AEBB3EAD1CCE1BB70019DDD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBB3EAB1CCE1BB70019DDD5 /* LaunchScreen.storyboard */; };
+		AEBB3EB61CCE1BFD0019DDD5 /* LMVipMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBB3EB51CCE1BFD0019DDD5 /* LMVipMemberVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		AEBB3E9E1CCE1BB70019DDD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEBB3EA01CCE1BB70019DDD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEBB3EA11CCE1BB70019DDD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEBB3EA31CCE1BB70019DDD5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEBB3EA41CCE1BB70019DDD5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AEBB3EA71CCE1BB70019DDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEBB3EA91CCE1BB70019DDD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBB3EAC1CCE1BB70019DDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBB3EAE1CCE1BB70019DDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBB3EB41CCE1BFD0019DDD5 /* LMVipMemberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMVipMemberVC.h; sourceTree = "<group>"; };
+		AEBB3EB51CCE1BFD0019DDD5 /* LMVipMemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMVipMemberVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,8 @@
 			children = (
 				AEBB3EA01CCE1BB70019DDD5 /* AppDelegate.h */,
 				AEBB3EA11CCE1BB70019DDD5 /* AppDelegate.m */,
-				AEBB3EA31CCE1BB70019DDD5 /* ViewController.h */,
-				AEBB3EA41CCE1BB70019DDD5 /* ViewController.m */,
-				AEBB3EA61CCE1BB70019DDD5 /* Main.storyboard */,
-				AEBB3EA91CCE1BB70019DDD5 /* Assets.xcassets */,
-				AEBB3EAB1CCE1BB70019DDD5 /* LaunchScreen.storyboard */,
-				AEBB3EAE1CCE1BB70019DDD5 /* Info.plist */,
+				AEBB3EB41CCE1BFD0019DDD5 /* LMVipMemberVC.h */,
+				AEBB3EB51CCE1BFD0019DDD5 /* LMVipMemberVC.m */,
 				AEBB3E9D1CCE1BB70019DDD5 /* Supporting Files */,
 			);
 			path = LMVipMemberVC;
@@ -74,6 +70,10 @@
 		AEBB3E9D1CCE1BB70019DDD5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AEBB3EA61CCE1BB70019DDD5 /* Main.storyboard */,
+				AEBB3EAE1CCE1BB70019DDD5 /* Info.plist */,
+				AEBB3EAB1CCE1BB70019DDD5 /* LaunchScreen.storyboard */,
+				AEBB3EA91CCE1BB70019DDD5 /* Assets.xcassets */,
 				AEBB3E9E1CCE1BB70019DDD5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,8 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBB3EA51CCE1BB70019DDD5 /* ViewController.m in Sources */,
 				AEBB3EA21CCE1BB70019DDD5 /* AppDelegate.m in Sources */,
+				AEBB3EB61CCE1BFD0019DDD5 /* LMVipMemberVC.m in Sources */,
 				AEBB3E9F1CCE1BB70019DDD5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

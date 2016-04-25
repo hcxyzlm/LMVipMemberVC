@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LMVipMemberVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // 在这里设置路径
+    
+    LMVipMemberVC* vipVC = [[LMVipMemberVC alloc] init];
+    
+    self.window.rootViewController = vipVC;
+    
+    // 刷新
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
